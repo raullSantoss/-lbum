@@ -1,0 +1,107 @@
+body {
+    font-family: "Winky Sans", sans-serif;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    margin: 0%;
+    padding: 20px;
+}
+  
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+#album {
+    margin-top: 20px;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 15px; /* Espaço entre as imagens */
+    margin-top: 20px;
+
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    max-width: 120px;  /* Tamanho das imagens */
+    max-height: 120px; /* Tamanho das imagens */
+    margin: 0 auto;
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.imagemModal {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
